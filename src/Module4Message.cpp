@@ -44,14 +44,14 @@ bool Module4Message::toStream(NetMessengerStreamBuffer& os) const
 
 bool Module4Message::fromStream(NetMessengerStreamBuffer& is)
 {
-    is << this->message;
-    is << model;
-    is << size.x;
-    is << size.y;
-    is << size.z;
-    is << position.x;
-    is << position.y;
-    is << position.z;
+    is >> this->message;
+    is >> model;
+    is >> size.x;
+    is >> size.y;
+    is >> size.z;
+    is >> position.x;
+    is >> position.y;
+    is >> position.z;
     return true;
 }
 

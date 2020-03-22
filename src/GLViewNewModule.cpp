@@ -197,8 +197,6 @@ void GLViewNewModule::onKeyDown(const SDL_KeyboardEvent& key)
 
     if (key.keysym.sym == SDLK_5)
     {
-        Module4Message msg1;
-        client->sendNetMsgSynchronousTCP(msg1);
         createAlien();
     }
 }
